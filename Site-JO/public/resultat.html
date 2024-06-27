@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Résultats de la Saison 2023</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css"> 
+    <link rel="icon" type="image/vnd.icon" href="images/logo.png">
+    <script src="script/script.js"></script>
+  </head>
+  <body>
+    <div class="bg-result">
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-lg-auto link-body-emphasis text-decoration-none">
+              <span class="fs-2">
+                <div class="logo">
+                <img src="images/logo2.png" alt="FF Slide" class="logo">
+                </div>
+              </span>
+            </a>
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="index.html" class="btn btn-nav">Acceuil</a></p>
+              <li class="nav-item"><a href="histoire.html" class="btn btn-nav">Histoire</a></p>
+              <li class="nav-item"><a href="resultat.html" class="btn btn-nav active" aria-current="page">Résultats</a></p>
+              <li class="nav-item"><a href="regles.html" class="btn btn-nav">Règles</a></p>
+              <li class="nav-item"><a a href="contact.html" class="btn btn-nav">Contact</a></p>
+            </ul>
+        </header>
+      </div>
+
+
+      <div class="container main-page-title-container d-flex align-items-center justify-content-center">
+        <h1 class="main-page-title animation">Grands Résultats</h1>
+      </div>
+      <div class="content-over">Championnats été-hiver saison 2023</div>
+    </div>
+
+    <div class="container">
+      <h2 class="result-title text-center">
+        Résultats des championnats 2023 
+      </h2>
+    </div>
+
+    <div class="container d-flex button-container">
+      <button id="toggleButton" class="btn-season first">Changer le récapitulatif saisonnier</button>
+      <a href="#comment-section">
+        <button id="commentSectionButton" class="btn-comment-section first">Aller aux commentaires de la saison</button>
+      </a>
+    </div>
+
+    <div class="container" style="width: 600px; height: 500px;">
+      <canvas id="summerChart"></canvas>
+      <canvas id="winterChart"></canvas>
+    </div>
+
+    <div class="container">
+      <div class="col-xl-12 px-4 py-5 row flex-lg-row-reverse align-items-center g-5 py-5">
+        <h2>Saison d'été</h2>
+        <p>La saison d'été a vu des performances variées des équipes nationales, avec des victoires notables pour plusieurs pays :</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Pays</th>
+                    <th scope="col">Victoires</th>
+                    <th scope="col">Commentaire</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Canada</td>
+                    <td>1</td>
+                    <td>Le Canada a obtenu 1 victoire, indiquant une performance modeste.</td>
+                </tr>
+                <tr>
+                    <td>USA</td>
+                    <td>2</td>
+                    <td>Les USA suivent de près l'Italie mais reste sur une maigre performance de deux victoire.</td>
+                </tr>
+                <tr>
+                    <td>Espagne</td>
+                    <td>3</td>
+                    <td>L'Espagne a un nombre assez faible de victoires, montrant une performance moyenne cette saison.</td>
+                </tr>
+                <tr>
+                    <td>Arabie-Saoudite</td>
+                    <td>3</td>
+                    <td>L'Arabie-Saoudite a un nombre décent de victoires, montrant une performance compétitive.</td>
+                </tr>
+                <tr>
+                    <td>Belgique</td>
+                    <td>5</td>
+                    <td>La Belgique se bat pour atteindre le podium.</td>
+                </tr>
+                <tr>
+                    <td>Italie</td>
+                    <td>8</td>
+                    <td>L'Italie suit de près la France avec 8 victoires, indiquant également une performance solide.</td>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td>8</td>
+                    <td>La France domine la saison estivale avec l'Italie et la remporte au grâce à leur rapidité.</td>
+                </tr>
+            </tbody>
+        </table>
+  	  </div>
+	  </div>
+
+   <div class="container">
+      <div class="row col-xl-12 px-4 py-5 flex-lg-row-reverse align-items-center g-5 py-5">
+        <h2>Saison d'hiver</h2>
+        <p>La saison d'hiver a apporté son lot de défis et de victoires, avec des équipes nationales montrant des performances remarquables :</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Pays</th>
+                    <th scope="col">Victoires</th>
+                    <th scope="col">Commentaire</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arabie-Saoudite</td>
+                    <td>1</td>
+                    <td>L'Arabie-Saoudite a montré une performance similaire au Canada en hiver.</td>
+                </tr>
+                <tr>
+                    <td>Espagne</td>
+                    <td>1</td>
+                    <td>L'Espagne a une performance très modeste cet hiver avec une seule de victoires.</td>
+                </tr>
+                <tr>
+                    <td>Italie</td>
+                    <td>2</td>
+                    <td>L'Italie a un nombre plus bas de victoires en hiver par rapport à l'été, des performances en baisse.</td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>4</td>
+                    <td>Le Canada rattrape son classement par rapport à la saison d'hiver, des performances encourageantes.</td>
+                </tr>
+                <tr>
+                    <td>Belgique</td>
+                    <td>6</td>
+                    <td>La Belgique maintient sa performance un nombre quasi-similaire de victoires.</td>
+                </tr>
+                <tr>
+                    <td>USA</td>
+                    <td>6</td>
+                    <td>Les États-Unis montrent une performance bien meilleur qu'en hiver avec un nombre de 6 victoires.</td>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td>10</td>
+                    <td>La France maintient sa domination en hiver avec le plus grand nombre de victoires, confirmant sa position forte.</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+  <div class="container">
+      <div class="col-xl-12 px-4 py-5 row flex-lg-row-reverse align-items-center g-5 py-5" id="comment-section">
+      <h2>Commentaires Sportifs</h2>
+        <div class="col-lg-8">
+		 <p>La France est la nation la plus performante dans les deux saisons, montrant une équipe nationale dominante et en forme pour les JO ! <em>(Le Journal Sportif)</em></p>
+       <p>Certains pays maintiennent une performance constante comme les USA ou la Belgique, tandis que d'autres montrent des variations saisonnières importantes comme l'Italie, attention à ne pas perdre le rytme avant les JO ! <em>(Sports Today)</em></p>
+         <p>Bien que l'Arabie Saoudite et l'Espagne aient affiché des performances plus modestes au cours des saisons, leur engagement et leur compétitivité demeurent indéniables. Ces équipes ont démontré une résilience notable, malgré des résultats en deçà de certaines attentes. <em>(Global Sports News)</em></p>
+         <p>Il serait intéressant d'explorer les raisons des variations de performance entre les saisons pour certaines équipes comme l'Italie, ce n'est pas normale de montrer des performances aussi faible avec une saison d'été pourtant si prometteuse, quelque chose à du se passer en interne pour que les joueurs montrent ce genre de contre-performance ...<em>(Sports Insights)</em></p>
+        </div>
+        <div class="col-md-8 col-sm-10 col-lg-4">
+          <img src="images/header-home.jpg" class="d-block mx-lg-auto img-fluid shadow rounded-4" alt="player" width="600">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <footer class="py-3 my-3">
+            <ul class="nav justify-content-center border-bottom pb-2 mb-2">
+              <li class="nav-item"><a href="photo-credits.html" class="nav-link text-body-secondary">Crédits photos</a></li>
+              <li class="nav-item"><a href="policy.html" class="nav-link text-body-secondary">Politique de confidentialité</a></p>
+              <li class="nav-item"><a href="cv.html" download class="nav-link text-body-secondary">CV du créateur</a>
+            </ul>
+            <p class="text-center text-body-secondary">&copy Fédération Française du Slide</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

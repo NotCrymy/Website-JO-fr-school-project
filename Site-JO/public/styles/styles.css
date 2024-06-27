@@ -1,0 +1,382 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+@keyframes growIcon {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}  
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    }
+    40% {
+        transform: translateY(-30px);
+        text-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    }
+    60% {
+        transform: translateY(-15px);
+        text-shadow: 0 0 22px rgba(0, 0, 0, 0.8);
+    }
+}
+
+body,footer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+.logo {
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    width: 140px;
+}
+
+.nav{
+    margin-top: 10px;
+}
+
+a:hover{
+    color: #000000!important ;
+}
+
+.feature {
+    margin-bottom: 30px ;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.text-decoration-none{
+    text-decoration: none!important ;
+}
+
+.small {
+	color: #ccc;
+	font-size: 14px;
+}
+
+/* Bouttons */
+
+button{
+    text-decoration:none;
+}
+
+.btn {
+  box-sizing: border-box;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 0.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #ffffff;
+}
+
+.first {
+  box-shadow: 0 4px 7px -1px rgba(0,0,0,.11), 0 2px 4px -1px rgba(0,0,0,.07);
+  background-image: linear-gradient(57deg,#505894,#ff0000);
+
+  &:hover,
+  &:focus {
+  color: #fff;
+  outline: 0;
+  box-shadow: 0 4px 7px -1px rgba(0,0,0,.11), 0 2px 4px -1px rgba(0,0,0,30);
+  }
+}
+
+.btn-nav {
+  box-shadow: 0 4px 7px -1px rgba(0,0,0,.11), 0 2px 4px -1px rgba(0,0,0,.07);
+  color: #616161;
+  
+  &:hover,
+  &:focus {
+  color: #000000;
+  outline: 0;
+  box-shadow: 0 4px 7px -1px rgba(0,0,0,.11), 0 2px 4px -1px rgba(0,0,0,.40);
+  }
+  
+}
+
+.btn.active {
+  color: #616161;
+  background-color: #d2d2d2;
+}
+
+
+.btn-season, .btn-comment-section {
+    box-sizing: border-box;
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    color: black;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 0.8em;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+}
+
+.btn-comment-section {
+    display: inline-block!important ;
+}
+
+/* icones */
+.feature-icon {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    box-shadow: 0 4px 7px -1px rgba(0,0,0,.11), 0 2px 4px -1px rgba(0,0,0,.07);
+	background: rgb(240,240,255);
+	background: radial-gradient(circle, rgba(240,240,255,1) 0%, rgba(207,207,238,1) 90%); 
+	padding: 16px;
+    border-radius: 10px;
+}
+
+.icon-animation:hover {
+    animation: growIcon 1s ease-in-out infinite;
+}
+
+/* balises Hn et typo */
+
+.h1, .h2, .h3, h1, h2, h3 {
+    font-weight: 700;
+}
+
+h1 {
+    justify-content: start;
+    text-align: left;
+    font-size: 3rem;
+}
+
+.primary {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 1;
+	background-image: linear-gradient(57deg,#505894,#ff0000);
+}
+
+h2 {
+    font-size: 1.875rem;
+    justify-content: start;
+    text-align: left;
+}
+
+h3 {
+    justify-content: start;
+    text-align: center;
+    font-size: 1.30rem;
+}
+h3.left
+{
+	justify-content: start;
+	text-align: left;
+	font-size: 1.30rem;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+
+p {
+	color: #999999;
+}
+
+/* pages interieures */
+
+.main-page-title-container{
+    height: 500px;
+}
+
+.bg-histoire, 
+.bg-result,  
+.bg-contact,
+.bg-grey,
+.bg-regles {
+	 position: relative;
+}
+
+.bg-histoire::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: auto;
+    padding: 0;
+    background: url(../images/bg-rules.jpg) no-repeat 100% 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-result::before{
+  content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: auto;
+    padding: 0;
+    background: url(../images/bg-result.jpg) no-repeat 100% 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: auto;
+    padding: 0;
+    background: url(../images/header-contact.jpg) no-repeat 100% 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-regles::before{
+ 	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: auto;
+    padding: 0;
+    background: url(../images/bg-regles.jpg) no-repeat 100% 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.bg-contact::before{
+ 	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: auto;
+    padding: 0;
+    background: url(../images/bg-contact.jpg) no-repeat 100% 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-grey::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: auto;
+    padding: 0;
+    background-color: #2c2a2ab2;
+    background-position: center center;
+    background-size: cover;
+}
+
+.content-over
+{
+	font-size: 18px;
+	text-align: center;
+	font-weight: 600;
+	color: #fff;
+	background: rgba(0,0,0,0.4);
+	padding: 20px 0;
+	border-top: 1px solid #333;
+	margin-top: -102px;
+	text-transform: uppercase;
+}
+
+/* Nouvelles règles si la fenêtre fait moins de 1024px de large */
+@media screen and (max-width: 1024px) {
+  .content-over {
+display: none;    
+  }
+}
+
+.main-page-title {
+    color: #FFFFFF;
+    font-weight: bold; 
+    font-size: 4em; 
+    text-shadow: 0px 0px 2px rgb(0, 0, 0); 
+}
+
+.animation {
+    animation: bounce 2s forwards;
+}
+
+.result-title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.summerChart{
+    margin-top: 40px;
+}
+
+.comment-section{
+    margin-top: 30px;
+}
+
+.comment{
+    margin-top: 25px;
+}
+
+.winterSeason{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.button-container{
+    align-items: center;
+    justify-content: center;
+}
+
+.title-rules{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
